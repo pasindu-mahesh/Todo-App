@@ -69,3 +69,18 @@ body{
     font-weight: bold;
 }
 
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    color: var(--text);
+}
+

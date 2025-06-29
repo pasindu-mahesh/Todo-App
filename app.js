@@ -16,6 +16,11 @@ const toggleTestComplete = (index) => {
     updateTaskList();
 };
 
+const deleteTask = (index) => {
+    tasks.splice(index, 1);
+    updateTaskList();
+}
+
 const updateTaskList = () => {
     const taskList = document.getElementById("taskList");
     taskList.innerHTML = "";

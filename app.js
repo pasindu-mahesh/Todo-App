@@ -11,6 +11,11 @@ const addTask = () => {
     } 
 };
 
+const toggleTestComplete = (index) => {
+    tasks[index].completed = !tasks[index].completed;
+    updateTaskList();
+};
+
 const updateTaskList = () => {
     const taskList = document.getElementById("taskList");
     taskList.innerHTML = "";

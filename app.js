@@ -40,6 +40,8 @@ const updateStats = () => {
   const progressBar = document.getElementById("progress");
   
   progressBar.style.width = `${progress}%`;
+
+  document.getElementById("numbers").innerText = `${completeTasks} / ${totalTasks}`;
 };
 
 const updateTaskList = () => {

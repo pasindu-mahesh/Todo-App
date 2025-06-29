@@ -24,7 +24,6 @@ const addTask = () => {
         updateTaskList();
         updateStats();
         saveTasks();
-
     } 
 };
 
@@ -33,7 +32,6 @@ const toggleTestComplete = (index) => {
     updateTaskList();
     updateStats();
     saveTasks();
-
 };
 
 const deleteTask = (index) => {
@@ -49,8 +47,7 @@ const editTask = (index) => {
     tasks.splice(index, 1);
     updateTaskList();
     updateStats();
-    saveTasks();
-    
+    saveTasks(); 
 };
 
 const updateStats = () => {

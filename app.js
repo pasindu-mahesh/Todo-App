@@ -19,7 +19,14 @@ const toggleTestComplete = (index) => {
 const deleteTask = (index) => {
     tasks.splice(index, 1);
     updateTaskList();
-}
+};
+
+const editTask = (index) => {
+    const taskInput = document.getElementById("taskInput");
+    taskInput.value = tasks[index].text;
+    tasks.splice(index, 1);
+    updateTaskList();
+};
 
 const updateTaskList = () => {
     const taskList = document.getElementById("taskList");
